@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+
+
+}
+
+.main {
+    margin-left: 180px;
+    padding: 10px;
+    height: 100vh;
+}
+
+input[type=button].button_one {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    margin: 4px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+}
+
+input[type=button].button_two {
+    background-color: #616161;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    margin: 4px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    float: right;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*навигация слева*/
+.nav-left {
+    background-color: #f1f1f1;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-left ul li a {
+    position: relative;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-left ul li a:hover {
+    color: #4CAF50;
+}
+
+.nav-left ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #ffffff;
+}
+
+/*навигация справа*/
+.nav-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    background-color: #f1f1f1;
+    transition: 1s all ease;
+}
+
+.nav-right ul li a {
+    position: relative;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.nav-right ul li a:hover {
+    color: #4CAF50;
+}
+
+.nav-right ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background: #ffffff;
+}
+
+.hideNav {
+    display: none !important;
+}
+
+.showNav {
+    display: block;
+}
+
+.page {
+    background-color: #eecccc;
+}
+
+.beige {
+    background-color: beige;
+}
+
+.grey {
+    background-color: grey;
+}
