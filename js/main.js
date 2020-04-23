@@ -86,27 +86,20 @@ $("li.itn-bg-four").click(() => {
     mainClass.removeClass("grey");
 });
 // Task 3
-let modal = {
-    self: $('#modal'),
-
-    showModal: (content) => {
-        const innerModal = $('#innerModal');
-        innerModal.html(content);
-        $('#modal').fadeIn();
-    },
-    hideModal: () => {
-        $('#modal').fadeOut();
-    }
+const showModal = (content) => {
+    const innerModal = $('#innerModal');
+    innerModal.html(content);
+    $('#modal').fadeIn();
+};
+const hideModal = () => {
+    $('#modal').fadeOut();
 };
 
 $('#submit').click(() => {
     let content = $("#item").val();
-    modal.showModal(content);
+    showModal(content);
 });
 
 $('#closeModal').click(() => {
-    modal.hideModal();
+    hideModal();
 })
-
-
-
