@@ -86,20 +86,18 @@ $("li.itn-bg-four").click(() => {
     mainClass.removeClass("grey");
 });
 // Task 3
-const showModal = (content) => {
-    const innerModal = $('#innerModal');
+const submit = $('#submit');
+const input = $("#item");
+const innerModal = $('#innerModal');
+const closeModal = $('#closeModal');
+const modal = $('#modal');
+
+submit.click(() => {
+    let content = input.val();
     innerModal.html(content);
-    $('#modal').fadeIn();
-};
-const hideModal = () => {
-    $('#modal').fadeOut();
-};
-
-$('#submit').click(() => {
-    let content = $("#item").val();
-    showModal(content);
+    modal.fadeIn();
 });
-
-$('#closeModal').click(() => {
-    hideModal();
+closeModal.click(() => {
+    modal.fadeOut();
 })
+
