@@ -11,19 +11,20 @@
 <body>
     <div class="nav-left">
         <ul id="list">
-            <li class="itn-bg-one"><a href="#">Text_1</a></li>
-            <li class="itn-bg-two"><a href="#">Text_2</a></li>
-            <li class="itn-bg-three"><a href="#">Text_3</a></li>
-            <li class="itn-bg-four"><a href="#">Text_4</a></li>
+            <li class="itn-bg-one"><a href="#">Text 1</a></li>
+            <li class="itn-bg-two"><a href="#">Text 2</a></li>
+            <li class="itn-bg-three"><a href="#">Text 3</a></li>
+            <li class="itn-bg-four"><a href="#">Text 4</a></li>
         </ul>
     </div>
     <div class="main">
-        <input type="button" value="button_one" class="button_one">
-        <input type="button" value="button_two" class="button_two">
+        <input type="button" value="Button one" class="button_one">
+        <input type="button" value="Button two" class="button_two">
+        <!-- Modal Window -->
         <div class="container">
             <form action="#">
-                <input id="item" type="text" placeholder="Введите текст" />
-                <input type="button" value="Отправить" id="submit">
+                <input id="item" type="text" placeholder="Enter text" />
+                <input type="button" value="Send" id="submit">
             </form>
             <div id="modal">
                 <div class="small-container">
@@ -32,6 +33,7 @@
                 </div>
             </div>
         </div>
+         <!-- Accordion -->
         <div class="accordion">
             <div>
                 <div class="panel">
@@ -108,19 +110,44 @@
                                 dolorum eaque error eveniet nam odio suscipit tenetur, voluptates! Ad atque maiores
                                 officiis quasi sequi!</p>
                             <div class="button"><a href="#">Lorem ipsum dolor sit</a></div>
-
                         </div>
                     </div>
+                </div>
+            </div>
+        
+        </div>
+         <!-- Tabs -->
+        <div id="tabs">
+            <ul class="tabs-nav">
+                <li><a href="#tab-1">Tabs №1</a></li>
+                <li><a href="#tab-2">Tabs №2</a></li>
+                <li><a href="#tab-3">Tabs №3</a></li>
+            </ul>
+            <div class="tabs-items">
+                <div class="tabs-item" id="tab-1">
+                    <strong>Text tabs №1</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="tabs-item" id="tab-2">
+                    <strong>Text tabs №2</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                </div>
+                <div class="tabs-item" id="tab-3">
+                    <strong>Text tabs №3</strong>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="nav-right hideNav showNav">
         <ul>
-            <li class="item"><a href="#">Text_1</a></li>
-            <li class="item"><a href="#">Text_2</a></li>
-            <li class="item page"><a href="#">Text_3</a></li>
-            <li class="item"><a href="#">Text_4</a></li>
+            <li class="item"><a href="#">Text 1</a></li>
+            <li class="item"><a href="#">Text 2</a></li>
+            <li class="item page"><a href="#">Text 3</a></li>
+            <li class="item"><a href="#">Text 4</a></li>
         </ul>
     </div>
     <script src="js/main.js"></script>

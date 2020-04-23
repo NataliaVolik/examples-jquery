@@ -54,7 +54,6 @@ inputRight.click(() => {
     openPanelRight(show);
 })
 
-
 const listName = $('li.item');
 console.log("Все элементы: " + listName.hasClass("page"));
 listName.each((index, elem) => {
@@ -107,4 +106,15 @@ $(document).ready(function () {
         $('.panel-heading').not(this).removeClass('in').next().slideUp();
     });
 });
-
+// Task 5
+$(function () {
+    const tab = $('#tabs .tabs-items > div');
+    tab.hide().filter(':first').show();
+    $('#tabs .tabs-nav a').click(function () {
+        tab.hide();
+        tab.filter(this.hash).show();
+        $('#tabs .tabs-nav a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    }).filter(':first').click();
+});
