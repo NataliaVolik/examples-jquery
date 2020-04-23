@@ -6,7 +6,6 @@ const mainClass = $(".main");
 const display = JSON.parse(localStorage.getItem('display'));
 
 const openPanelLeft = (display) => {
-    // debugger;
     if (display == false) {
         navLeft.hide();
         mainClass.animate({
@@ -24,7 +23,6 @@ openPanelLeft(display);
 
 inputLeft.click(() => {
     const display = navLeft.is(':visible');
-    // debugger;
     localStorage.setItem('display', display);
     const show = !display;
     openPanelLeft(show);
@@ -51,7 +49,6 @@ openPanelRight(display);
 
 inputRight.click(() => {
     const display = navRight.is(':visible');
-    // debugger;
     localStorage.setItem('display', display);
     const show = !display;
     openPanelRight(show);
@@ -65,17 +62,12 @@ listName.each((index, elem) => {
 });
 
 //Task 2
-
-// change with CSS
-
-
 $("li.itn-bg-one").click(() => {
     mainClass.css("background-color", "#cceecc");
     mainClass.removeClass("grey");
     mainClass.removeClass("beige");
 });
 
-// change with Class
 $("li.itn-bg-two").click(() => {
     mainClass.removeClass("grey");
     mainClass.addClass("beige");
@@ -88,9 +80,20 @@ $("li.itn-bg-three").click(() => {
     mainClass.removeAttr('style');
 });
 
-// change with CSS
 $("li.itn-bg-four").click(() => {
     mainClass.css("background-color", "#eecccc");
     mainClass.removeClass("beige");
     mainClass.removeClass("grey");
 });
+// Task 3
+// Modal window with native function
+const itemInput = $("#item")[0];
+const submitBtn = $("#submit");
+submitBtn.click((event) => {
+   event.preventDefault()
+   alert('Вы написали: ' + itemInput.value)
+  itemInput.value = ''
+})
+
+
+

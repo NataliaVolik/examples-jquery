@@ -20,6 +20,18 @@
     <div class="main">
         <input type="button" value="button_one" class="button_one">
         <input type="button" value="button_two" class="button_two">
+        <div class="container">
+            <form action="#">
+                <input id="item" type="text" placeholder="Введите текст" />
+                <input type="button" value="Отправить" id="submit">
+            </form>
+            <div id="modal">
+                <div class="small-container">
+                   <i class="fa fa-close closeModal" id='closeModal'></i>
+                   <div id="innerModal"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="nav-right hideNav showNav">
         <ul>
@@ -30,5 +42,6 @@
         </ul>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://use.fontawesome.com/ba2bc28957.js"></script>
 </body>
 </html>
