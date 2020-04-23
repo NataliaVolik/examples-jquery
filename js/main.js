@@ -86,13 +86,26 @@ $("li.itn-bg-four").click(() => {
     mainClass.removeClass("grey");
 });
 // Task 3
-// Modal window with native function
-const itemInput = $("#item")[0];
-const submitBtn = $("#submit");
-submitBtn.click((event) => {
-   event.preventDefault()
-   alert('Вы написали: ' + itemInput.value)
-  itemInput.value = ''
+let modal = {
+    self: $('#modal'),
+
+    showModal: (content) => {
+        const innerModal = $('#innerModal');
+        innerModal.html(content);
+        $('#modal').fadeIn();
+    },
+    hideModal: () => {
+        $('#modal').fadeOut();
+    }
+};
+
+$('#submit').click(() => {
+    let content = $("#item").val();
+    modal.showModal(content);
+});
+
+$('#closeModal').click(() => {
+    modal.hideModal();
 })
 
 
