@@ -95,9 +95,10 @@ const modal = $('#modal');
 submit.click(() => {
     let content = input.val();
     innerModal.html(content);
-    modal.fadeIn();
+    modal.addClass('show');
 });
 closeModal.click(() => {
-    modal.fadeOut();
+    modal.removeClass('show');
 })
+
 
